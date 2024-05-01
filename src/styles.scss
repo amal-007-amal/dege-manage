@@ -1,1 +1,67 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Mukta:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');*{
+    font-family: "Didact Gothic", sans-serif;
+    font-optical-sizing: auto;
+}
+
+
+
+/** styles for updating*/
+.hButton{
+    background-color: #1A4D2E;
+    color: #F5EFE6;
+    margin: 0.5rem;
+    border-radius: 5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 0.5rem;
+    border:2px solid #F5EFE6;
+  }
+  .imgHClass{
+    margin: 0.3rem;
+    padding: 1rem;
+  }
+  .imgHClass img{
+    border-radius: 1rem;
+    border:2px solid #F5EFE6;
+    height: auto;
+    width: 200px;
+    object-fit: contain;
+    object-position: center;
+    box-shadow: rgba(26, 77, 46, 0.4) 5px 5px,
+     rgba(26, 77, 46, 0.3) 10px 10px,
+      rgba(26, 77, 46, 0.2) 15px 15px,
+       rgba(26, 77, 46, 0.1) 20px 20px,
+        rgba(26, 77, 46, 0.05) 25px 25px;
+  }
+
+  .cardCsClass{
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 0.5rem;
+}
+.textCustomClass{
+    font-size: 1.7rem;
+}
+.rButton{
+  width: 100px;
+  height: 40px;
+  border-radius: 50px;
+  background-image: linear-gradient(135deg, #4F6F52 0%, #1A4D2E 100%);
+  box-shadow: 0 20px 30px -6px rgba(26, 77, 46, 0.5);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: white;
+}
+.cardCsClass .form-select{
+}
+.cardCsClass .form-control{
+}
+.greenClass{
+  color: #1A4D2E;
+}
+.firstFZise{
+  font-size: 1.5rem;
+}

@@ -1,0 +1,23 @@
+.navbarClass{
+    background-color: #1A4D2E;
+    border-bottom: 5px solid #fff;
+}
+
+.navbarClass .nav-item > .nav-link{
+    color: #F5EFE6;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.navbarClass .navbar-brand{
+    padding-left: 1rem;
+    color: #F5EFE6;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.navbarClass .nav-item > .nav-link:nth-child(5){
+    color: #ba6f00;
+    font-size: 16px;
+    font-weight: 400;
+}
