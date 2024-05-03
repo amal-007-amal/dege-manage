@@ -1,0 +1,30 @@
+.bookCardClass{
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    background-color: #F5EFE6;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.bookImgClass{
+    padding: 1rem;
+    border: 1px solid #F5EFE6;
+    border-radius: 5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.bookImgClass{
+    width: 150px;
+    height: 150px;
+}
+.bookButton{
+    width: 70%;
+    padding: 0.3rem;
+    font-weight: 500;
+    border: none;
+    background: #E8DFCA;
+    color: #1A4D2E;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.modal-content{
+    background: #E8DFCA;
+}

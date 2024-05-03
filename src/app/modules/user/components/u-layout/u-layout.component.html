@@ -1,1 +1,19 @@
-<p>u-layout works!</p>
+<app-u-header></app-u-header>
+<div class="container mt-3">
+    <div class="row cardCsClass">
+        <div class="col-md-2">
+            <div class="carInClass p-2 d-flex flex-column justify-content-center">
+                <a routerLink="profile" class="linkClass">Profile</a>
+                <a routerLink="advisory" class="linkClass">Advisory</a>
+                <a routerLink="meeting" class="linkClass">Meetings</a>
+                <a routerLink="connect" class="linkClass">Connect</a>
+                <a routerLink="notifcation" class="linkClass">Notifications</a>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <div class="carInClass p-2">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>

@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class BookCallComponent {
 
+  selected!:Date|null
+
+  getAvailability(event:any){
+    console.log("event emit ",event)
+  }
 }

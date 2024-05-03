@@ -1,3 +1,40 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$dege-manage-primary: mat.define-palette(mat.$indigo-palette);
+$dege-manage-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$dege-manage-warn: mat.define-palette(mat.$red-palette);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$dege-manage-theme: mat.define-light-theme((
+  color: (
+    primary: $dege-manage-primary,
+    accent: $dege-manage-accent,
+    warn: $dege-manage-warn,
+  ),
+  typography: mat.define-typography-config(),
+  density: 0
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($dege-manage-theme);
+
 /* You can add global styles to this file, and also import other style files */
 @import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Mukta:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');*{
@@ -41,7 +78,7 @@
     border-radius: 0.5rem;
 }
 .textCustomClass{
-    font-size: 1.7rem;
+    font-size: 1.4rem;
 }
 .rButton{
   width: 100px;
@@ -61,7 +98,30 @@
 }
 .greenClass{
   color: #1A4D2E;
+  cursor: pointer;
 }
 .firstFZise{
   font-size: 1.5rem;
 }
+
+
+.navbarClass{
+  background-color: #1A4D2E;
+  border-bottom: 5px solid #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.navbarClass .nav-item > .nav-link{
+  color: #F5EFE6;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.navbarClass .navbar-brand{
+  padding-left: 1rem;
+  color: #F5EFE6;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
